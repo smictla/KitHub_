@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Componentes Electrónicos - KitHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="fondo-ondas">
+        <div class="onda"></div>
+        <div class="onda"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="KitHub Logo"> </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#paquetes">Paquetes</a></li>
+            <li><a href="#tutoriales">Tutoriales</a></li>
+            <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+        </ul>
+        <div class="cart-icon-container">
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            <span id="cart-counter">0</span>
+            <div id="cart-dropdown" class="cart-dropdown-content">
+                <h3>Mi Carrito</h3>
+                <ul id="cart-items">
+                    <li class="cart-empty-msg">Tu carrito está vacío.</li>
+                </ul>
+                <div class="cart-total">
+                    <strong>Total: $<span id="cart-total-price">0.00</span></strong>
+                </div>
+                <button id="clear-cart-btn">Vaciar Carrito</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenido">
+        <section id="inicio" class="seccion">
+            <h2>Bienvenido a KitHub :D</h2>
+            <p>Tu tienda de confianza en componentes electrónicos. Encuentra todo lo que necesitas para tus proyectos de electrónica y tecnología.</p>
+        </section>
+
+        <section id="productos" class="seccion">
+            <h2>Productos</h2>
+
+            <h3>Resistencias</h3>
+            <div class="grid-productos">
+                <div class="producto" data-name="Resistencia 220Ω" data-price="1">
+                    <img src="https://th.bing.com/th/id/OIP.TuQvN1mqNfzrzP9d9rc3awAAAA?pid=ImgDet&w=175&h=209&c=7" alt="Resistencia 220Ω">
+                    <p>Resistencia 220Ω</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Resistencia 1kΩ" data-price="1">
+                    <img src="https://th.bing.com/th/id/OIP.TuQvN1mqNfzrzP9d9rc3awAAAA?pid=ImgDet&w=175&h=209&c=7" alt="Resistencia 1kΩ">
+                    <p>Resistencia 1kΩ</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Resistencia 4.7kΩ" data-price="3">
+                    <img src="https://th.bing.com/th/id/OIP.TuQvN1mqNfzrzP9d9rc3awAAAA?pid=ImgDet&w=175&h=209&c=7" alt="Resistencia 4.7kΩ">
+                    <p>Resistencia 4.7kΩ</p>                    
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Resistencia 10kΩ" data-price="3">
+                    <img src="https://th.bing.com/th/id/OIP.TuQvN1mqNfzrzP9d9rc3awAAAA?pid=ImgDet&w=175&h=209&c=7" alt="Resistencia 10kΩ">
+                    <p>Resistencia 10kΩ</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Resistencia 470Ω" data-price="1">
+                    <img src="https://th.bing.com/th/id/OIP.TuQvN1mqNfzrzP9d9rc3awAAAA?pid=ImgDet&w=175&h=209&c=7" alt="Resistencia 470Ω">
+                    <p>Resistencia 470Ω</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <h3>Diodos</h3>
+            <div class="grid-productos">
+                <div class="producto" data-name="Diodo 1N4007" data-price="1">
+                    <img src="https://www.bing.com/th?id=OPHS.OyBg4MEtfcVQpg474C474&o=5" alt="Diodo 1N4007">
+                    <p>Diodo 1N4007</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Diodo 1N4148" data-price="1">
+                    <img src="https://www.bing.com/th?id=OPHS.OyBg4MEtfcVQpg474C474&o=5" alt="Diodo 1N4148">
+                    <p>Diodo 1N4148</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Diodo LED Rojo" data-price="3">
+                    <img src="https://www.bing.com/th?id=OPHS.OyBg4MEtfcVQpg474C474&o=5" alt="Diodo LED Rojo">
+                    <p>Diodo LED Rojo</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Diodo Zener 5.1V" data-price="3">
+                    <img src="https://www.bing.com/th?id=OPHS.OyBg4MEtfcVQpg474C474&o=5" alt="Diodo Zener 5.1V">
+                    <p>Diodo Zener 5.1V</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Puente Rectificador" data-price="1">
+                    <img src="https://www.bing.com/th?id=OPHS.OyBg4MEtfcVQpg474C474&o=5" alt="Puente Rectificador">
+                    <p>Puente Rectificador</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <h3>Transistores</h3>
+             <div class="grid-productos">
+                <div class="producto" data-name="Transistor BC547" data-price="3">
+                    <img src="https://www.bing.com/th?id=OPHS.rGXlKc1tk1iR%2fA474C474&o=5" alt="Transistor BC547">
+                    <p>Transistor BC547</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Transistor 2N2222" data-price="3">
+                    <img src="https://www.bing.com/th?id=OPHS.rGXlKc1tk1iR%2fA474C474&o=5" alt="Transistor 2N2222">
+                    <p>Transistor 2N2222</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="MOSFET IRF540N" data-price="1">
+                    <img src="https://www.bing.com/th?id=OPHS.rGXlKc1tk1iR%2fA474C474&o=5" alt="MOSFET IRF540N">
+                    <p>MOSFET IRF540N</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                 <div class="producto" data-name="Transistor BD139" data-price="3">
+                    <img src="https://www.bing.com/th?id=OPHS.rGXlKc1tk1iR%2fA474C474&o=5" alt="Transistor BD139">
+                    <p>Transistor BD139</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="Transistor TIP41C" data-price="1">
+                    <img src="https://www.bing.com/th?id=OPHS.rGXlKc1tk1iR%2fA474C474&o=5" alt="Transistor TIP41C">
+                    <p>Transistor TIP41C</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <h3>LEDs</h3>
+            <div class="grid-productos">
+                <div class="producto" data-name="LED Rojo 5mm" data-price="1">
+                    <img src="https://th.bing.com/th/id/OPHS.8k0Bxb3mDfFY2A474C474" alt="LED Rojo 5mm">
+                    <p>LED Rojo 5mm</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="LED Verde 5mm" data-price="1">
+                    <img src="https://th.bing.com/th/id/OPHS.8k0Bxb3mDfFY2A474C474" alt="LED Verde 5mm">
+                    <p>LED Verde 5mm</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="LED Azul 5mm" data-price="3">
+                    <img src="https://th.bing.com/th/id/OPHS.8k0Bxb3mDfFY2A474C474" alt="LED Azul 5mm">
+                    <p>LED Azul 5mm</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                 <div class="producto" data-name="LED Amarillo 5mm" data-price="1">
+                    <img src="https://th.bing.com/th/id/OPHS.8k0Bxb3mDfFY2A474C474" alt="LED Amarillo 5mm">
+                    <p>LED Amarillo 5mm</p>
+                    <p class="precio">$1.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="producto" data-name="LED Blanco 5mm" data-price="3">
+                    <img src="https://th.bing.com/th/id/OPHS.8k0Bxb3mDfFY2A474C474" alt="LED Blanco 5mm">
+                    <p>LED Blanco 5mm</p>
+                    <p class="precio">$3.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="paquetes" class="seccion">
+            <h2>Paquetes de Componentes</h2>
+            <div class="grid-paquetes">
+                <div class="paquete producto" data-name="Kit Soldadura Básica" data-price="175">
+                    <div class="paquete-header">
+                        <p class="paquete-nombre">Kit Soldadura Básica</p>
+                        <span class="paquete-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="paquete-contenido-desplegable">
+                        <p><strong>Contenido del paquete:</strong></p>
+                        <ul>
+                            <li>Cautín 60W Punta Fina</li>
+                            <li>Rollo de Estaño 60/40</li>
+                            <li>Soporte para Cautín</li>
+                            <li>Malla Desoldadora</li>
+                            <li>Pasta para Soldar</li>
+                        </ul>
+                    </div>
+                    <p class="precio">$175.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+
+                <div class="paquete producto" data-name="Kit Medición de Precisión" data-price="470">
+                    <div class="paquete-header">
+                        <p class="paquete-nombre">Kit Medición de Precisión</p>
+                        <span class="paquete-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="paquete-contenido-desplegable">
+                        <p><strong>Contenido del paquete:</strong></p>
+                        <ul>
+                            <li>Vernier tradicional</li>
+                            <li>Regla y escuadras</li>
+                            <li>Micrómetro</li>
+                        </ul>
+                    </div>
+                    <p class="precio">$470.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+
+                <div class="paquete producto" data-name="Kit Eléctrico Esencial" data-price="400">
+                    <div class="paquete-header">
+                        <p class="paquete-nombre">Kit Eléctrico Esencial</p>
+                        <span class="paquete-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="paquete-contenido-desplegable">
+                        <p><strong>Contenido del paquete:</strong></p>
+                        <ul>
+                            <li>Multímetro</li>
+                            <li>Voltímetro de pluma</li>
+                            <li>Amperímetro</li>
+                        </ul>
+                    </div>
+                    <p class="precio">$400.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+
+                <div class="paquete producto" data-name="Kit Laboratorio y Seguridad" data-price="360">
+                    <div class="paquete-header">
+                        <p class="paquete-nombre">Kit Laboratorio y Seguridad</p>
+                        <span class="paquete-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="paquete-contenido-desplegable">
+                        <p><strong>Contenido del paquete:</strong></p>
+                        <ul>
+                            <li>Manómetro</li>
+                            <li>Bata</li>
+                            <li>Gafas</li>
+                            <li>5 Cubrebocas</li>
+                        </ul>
+                    </div>
+                    <p class="precio">$360.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                
+                <div class="paquete producto" data-name="Kit Técnico Integral" data-price="720">
+                    <div class="paquete-header">
+                        <p class="paquete-nombre">Kit Técnico Integral</p>
+                        <span class="paquete-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="paquete-contenido-desplegable">
+                        <p><strong>Contenido del paquete:</strong></p>
+                        <ul>
+                            <li>Bata</li>
+                            <li>Multímetro</li>
+                            <li>Vernier</li>
+                            <li>Voltímetro de pluma</li>
+                            <li>Amperímetro</li>
+                            <li>Gafas</li>
+                        </ul>
+                    </div>
+                    <p class="precio">$720.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+
+                <div class="paquete producto" data-name="Paquete Profesional Completo" data-price="840">
+                    <div class="paquete-header">
+                        <p class="paquete-nombre">Paquete Profesional Completo</p>
+                        <span class="paquete-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="paquete-contenido-desplegable">
+                        <p><strong>Contenido del paquete:</strong></p>
+                        <ul>
+                            <li>Vernier</li>
+                            <li>Multímetro</li>
+                            <li>Manómetro</li>
+                            <li>Micrómetro</li>
+                            <li>Bata</li>
+                            <li>Gafas</li>
+                            <li>10 Pares de Guantes</li>
+                            <li>10 Cubrebocas</li>
+                        </ul>
+                    </div>
+                    <p class="precio">$840.00</p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutoriales" class="seccion">
+            <h2>Tutoriales</h2>
+            
+            <div class="section"> 
+              <h3>🔧 Bernier (Calibrador Vernier)</h3>
+              <div class="video">
+                <p><strong>Lectura en pulgadas</strong></p>
+                <p>Aprende a usar el calibrador para medir en pulgadas.</p>
+                <a href="https://youtu.be/2SLQvaGHDV4?si=P4h89lyRX-_ByoWa" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>Lectura en milímetros</strong></p>
+                <p>Lecturas precisas con el bernier.</p>
+                <a href="https://youtu.be/CEJuZ2_kXmI?si=hKTzGl2Xe2s7wb8k" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>Lectura 1/128 pulgadas</strong></p>
+                <p>Cómo usar fracciones en pulgadas.</p>
+                <a href="https://youtu.be/Ti1yTAUy9C8?si=VtyizWVHMoT8jokT" target="_blank">Ver video</a>
+              </div>
+            </div>
+        
+            <div class="section">
+              <h3>📚 Electrónica Básica</h3>
+              <div class="video">
+                <p><strong>Principales componentes electrónicos</strong></p>
+                <p>Elementos comunes en un circuito.</p>
+                <a href="https://youtu.be/1NRFL6YYtzg?si=IBtHpJtgNK2LLqDn" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>Conceptos clave</strong></p>
+                <p>Voltaje, corriente, resistencia y potencia.</p>
+                <a href="https://youtu.be/7OhXvJ64vyY?si=HSGe9hnnYBmpUbKw" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>Uso básico del multímetro</strong></p>
+                <p>Medición de corriente, voltaje y resistencia.</p>
+                <a href="https://youtu.be/kHZ8SD7jiiA?si=WuWSaDKl3zO-x8G6" target="_blank">Ver video</a>
+              </div>
+            </div>
+        
+            <div class="section">
+              <h3>💡 Microcontroladores</h3>
+              <div class="video">
+                <p><strong>Introducción al PIC18F4550</strong></p>
+                <p>Cómo funciona este microcontrolador.</p>
+                <a href="https://youtu.be/6R8AcDlY_L4?si=SZefeGRAO0C4WRo5" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>LCD con PIC</strong></p>
+                <p>Conexión y programación de una pantalla LCD.</p>
+                <a href="https://youtu.be/fy6S0Q-PHzw?si=vZZezVW2ilo1RHyq" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>PWM en PIC</strong></p>
+                <p>Modulación por ancho de pulso.</p>
+                <a href="https://youtu.be/JUDjJTjoJcU?si=XKUF-uuM7YxLJtu4" target="_blank">Ver video</a>
+              </div>
+            </div>
+        
+            <div class="section">
+              <h3>⚙️ Otros Temas Técnicos</h3>
+              <div class="video">
+                <p><strong>Rectificadores y filtros</strong></p>
+                <p>Conversión de corriente alterna a directa.</p>
+                <a href="https://youtu.be/jzibrKq4ing?si=bwT67HZ6YlsK9y0e" target="_blank">Ver video</a>
+              </div>
+              <div class="video">
+                <p><strong>Motor trifásico</strong></p>
+                <p>Conexiones de un motor trifásico.</p>
+                <a href="https://youtu.be/BCfhgw0QUik?si=qsXyoccHyS-vfgL_" target="_blank">Ver video</a>
+              </div>
+            </div>
+
+        </section>
+
+        <section id="quienes-somos" class="seccion">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un equipo apasionado por la electrónica, ofreciendo los mejores componentes y asesoría para tus proyectos.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 KitHub - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
